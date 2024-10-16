@@ -51,5 +51,12 @@ The Sequential Model
                             Helps avoid the vanishing gradient problem (A challenge that occurs when training deep neural networks using gradient-based learning methods) by maintaining a linear response for positive inputs.
                             Can lead to "dead neurons" (neuron that stop learning) if many neurons output 0.
                             Common in hidden layers of deep networks, especially convolutional networks (CNNs).
+                        Sigmoid (Logistic):
+                            f(x) = 1/(1+e^-x)
+                            Squashes input values into a range between 0 & 1.
+                            Useful for binary classification, as it outputs values that can be interpreted as probabilities.
+                            Can cause vanishing gradient problems during backpropagations in deep networks.
+                            Gradient becomes very small for large or small inputs.
+                            Often used in the output layer of binary classification models.
                 Other parameters: You can specify other arguments like kernel initializer, bias initializer, regularization, etc., but units and activation
                     are the most important for most use cases.
