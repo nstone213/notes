@@ -1,0 +1,24 @@
+Keras: the high level API for TensorFlow;
+    Provides a highly productive interface for solving ML problems.
+    Full access to the "scalability and cross-platform capabilities of TensorFlow.
+    
+Core data structures of Kera are <layers> and <models>.
+    A layer is a simple input/output transformation, and a model is a directed, acyclic graph (DAG) of layers.
+
+    Layers:
+        import tensorflow as tf;
+        tf.keras.layers.Layer -> class which is the fundamental abstraction in Keras. 
+            A Layer encapsulates a state (weights) and some computation (Defined in the tf.keras.layers.Layer.call method);
+            Weights created by layers can be trainable or non-trainable. Layers are recusively composable: If you assign a layer instance
+                as an attribute of another layer, the outer layer will start tracking the weights created by the inner layer.
+            You can also use layers to handle data preprocessing tasks like normalization and text vectorization. Preprocessing layers can be included
+                directly into a model, either during or after training, which makes the model portable.
+            
+    Models:
+        A model is an object that groups layers together and that can be trained on data.
+        The simplest type of model is the <Sequential> model, which is a linear stack of layers. For more complex architectures, you can either use the 
+            Keras functional API, which lets you build arbitrary graphs of layers, or use subclassing to write models from scratch.
+        tf.keras.Model:
+            tf.keras.Model.fit: trains the model for a fixed number of epochs.
+            tf.keras.Model.predict: generates output predictions for the input samples.
+            tf.keras.Model.evaluate: returns the loss and metrics values for the model; configured via the tf.keras.Model.compile method.
