@@ -43,5 +43,13 @@ The Sequential Model
                 Units: the number of neurons or units in the layer. This determines the dimensionality of the output space.
                 Activation: the activation function to apply to the output of the layer (i.e. relu, sigmoid, softmax). If no activation is specified,
                     it defaults to a linear activation (f(x) = x).
+                    -> Activation functions are mathematical functions applied to the output of neurons in a neural network layer. They introduce
+                        non-linearity into the model, allowing it to learn complex patterns and make accurate predictions.
+                        ReLU (Rectified Linear Unit):
+                            Returns 0 if the input is negative and returns the input itself if it's positive.
+                            f(x) = max(0,x)
+                            Helps avoid the vanishing gradient problem (A challenge that occurs when training deep neural networks using gradient-based learning methods) by maintaining a linear response for positive inputs.
+                            Can lead to "dead neurons" (neuron that stop learning) if many neurons output 0.
+                            Common in hidden layers of deep networks, especially convolutional networks (CNNs).
                 Other parameters: You can specify other arguments like kernel initializer, bias initializer, regularization, etc., but units and activation
                     are the most important for most use cases.
