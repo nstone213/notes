@@ -58,5 +58,23 @@ The Sequential Model
                             Can cause vanishing gradient problems during backpropagations in deep networks.
                             Gradient becomes very small for large or small inputs.
                             Often used in the output layer of binary classification models.
+                        Tanh (Hyperbolic Tangent)
+                            f(x) = tanh(x) = 2/(1+e^-2x) - 1;
+                            Same behaviour as Sigmoid, but centers outout values 0, between -1 and 1.
+                            Reduces bias because the output is zero-centered
+                                -> Less prone to the vanishing gradient problem compared to the sigmoid function.
+                            Still can suffer from vanishing gradients in deep networks.
+                            Often used in hidden layers, especially in tasks requiring zero-centered outputs (like RNNs)
+                        Softmax
+                            Converts raw scores (logits) into probabilities by normalizing the inputs into a probability distribution where the sum of all outputs equals 1.
+                            Useful for multi-class classification where the model needs to choose between multiple classes
+                            Can be computationally intensive for large output spaces.
+                            Typically used in the output layer of classification problems with more than two classes (such as image classification)
+                        Leaky ReLU
+                            f(x) = max(0.01x, x)
+                            Similary to ReLU, but instead of outputting zero, it outputs a small, non-zero values
+                            Solves the "dead neuron" problem in standard ReLU
+                            Still retains the behaviour of a linear function for positive inputs, so not as complex as some other functions
+                            Often used as an alternative to ReLU to improve gradient flow for negative inputs.
                 Other parameters: You can specify other arguments like kernel initializer, bias initializer, regularization, etc., but units and activation
                     are the most important for most use cases.
