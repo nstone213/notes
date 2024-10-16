@@ -22,3 +22,26 @@ Core data structures of Kera are <layers> and <models>.
             tf.keras.Model.fit: trains the model for a fixed number of epochs.
             tf.keras.Model.predict: generates output predictions for the input samples.
             tf.keras.Model.evaluate: returns the loss and metrics values for the model; configured via the tf.keras.Model.compile method.
+
+The Sequential Model
+    Setup:
+        import tensorflow as tf
+        import keras
+        from keras import layers
+    
+    When to use a Sequential Model:
+        A Sequential model is appropriate for a plain stack of layers where each layer has exactly one input tensor and one output tensor.
+    
+    A Sequential model is not appropriate when:
+        Your model has multiple inputs or multiple outputs.
+        Any of your layers has multiple inputs or multiple outputs.
+        You need to do layer sharing.
+        You want non-linear topology (i.e. a residual connection, a multi-branch model)
+
+        .Dense:
+            keras.layers.Dense(units, activation=None, ...);
+                Units: the number of neurons or units in the layer. This determines the dimensionality of the output space.
+                Activation: the activation function to apply to the output of the layer (i.e. relu, sigmoid, softmax). If no activation is specified,
+                    it defaults to a linear activation (f(x) = x).
+                Other parameters: You can specify other arguments like kernel initializer, bias initializer, regularization, etc., but units and activation
+                    are the most important for most use cases.
