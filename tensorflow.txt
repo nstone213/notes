@@ -78,3 +78,14 @@ The Sequential Model
                             Often used as an alternative to ReLU to improve gradient flow for negative inputs.
                 Other parameters: You can specify other arguments like kernel initializer, bias initializer, regularization, etc., but units and activation
                     are the most important for most use cases.
+                Note that there's also a corresponding pop() method to remove layers: a sequential model behaves very much like a list of layers (a stack)
+                    model.pop()
+                    print(len(model.layers)) //2
+                The Sequential constructor also accepts a name argument, just like any layer or model in keras. This is useful to annotate TensorBoard graphs
+                    with semantically meaningful names.
+                    < Example
+                        model = keras.Sequential(name="my_sequential")
+                        model.add(layers.Dense(2, activation="relu", name="layer1"))
+                        model.add(layers.Dense(3, activation="relu", name="layer2"))
+                        model.add(layers.Dense(4, name="layer3"))
+                    End Example >
