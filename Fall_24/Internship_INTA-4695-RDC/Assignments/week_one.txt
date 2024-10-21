@@ -1,0 +1,24 @@
+Internship Goals
+Nicholas Stone
+
+An important note on being a computer science major: the umbrella of CS-related and -adjacent applications 
+cannot be contained in a single umbrella but rather a series of them. Entering college, I was (and largely still am) 
+fairly dead set on applying my computer science degree to Industrial/Organizational (I/O) Psychology, wherein I can 
+learn ML through the lens of workplace and behavioral interactions. And yet, there’s another part of me which wants 
+to apply my degree in the energy sector, understanding how to optimize the allocations of energy to the corporations 
+who desire it most. Even still, I can see myself in the realm of cybersecurity, expanding the implications and 
+complications of cryptography. My point is that taking on a major that is so malleable is one which proffers a wealth 
+of knowledge and opportunity, but more so, creates an undeniably difficult decision in determining how to use the degree. 
+To me, taking on an internship with the House Committee on Oversight and Accountability is a strong opportunity to take 
+some of these broad interests and narrow them by investing in their real-world applications. The Committee particularly 
+hosts subcommittees on cybersecurity and energy policy, those of which I’m interested in seeing how Congress interfaces 
+with such issues on a scaled-up platform. One of the main reasons why I wanted to participate in this program was summed 
+up earlier this week: Eventually, the technology will always work. However, an oft-overlooked understanding of these 
+technological problems is that the engineering doesn’t end after the product is created. Technology must be politically 
+engineered into existence, and that means internal changes to fit appropriate regulation or activism to bring new 
+technological disruptions to fruition. I intend to educate myself on this by extending myself to as many of the briefing 
+and hearing opportunities which are available to me as a Science Policy intern. Though much of the work I will be doing 
+will not be entirely ‘technical’, just because I am not coding in an IDE does not mean that the work that I will be doing 
+is not relevant to my education as a computer science major. I believe that the policy work that I will be indulging in 
+is simply another droplet of CS-related and -adjacent applications that is often drowned out by the appeal and prestige 
+associated with Big Tech.
