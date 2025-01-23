@@ -1,0 +1,10 @@
+startup.sh -> A shell script which runs startup commands on execution.
+    Run the Commands Manually (First Time Setup) 
+        Create Virtual Environment:
+            python3 -m venv xlr8-env
+        Activate the virtual environment:
+            source xlr8-env/bin/activate
+        Install Dependencies
+            pip install -r requirements.txt
+        python3 run.py
+        
