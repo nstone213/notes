@@ -7,4 +7,6 @@ startup.sh -> A shell script which runs startup commands on execution.
         Install Dependencies
             pip install -r requirements.txt
         python3 run.py
-        
+
+config.py
+    
