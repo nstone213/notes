@@ -1,0 +1,33 @@
+Particle Filters:
+    Represent a probability density function as a set of weighted samples.
+    The weighted samples are:
+        pushed through the motion model (including uncertainty)
+        reweighted based on sensor measurements (using the sensor model)
+        resampled using the new weighted  to define a probability distribution on the sample set.
+
+        the approach is easy to implement, and has low computational overhead.
+        complexity does not grow exponentially with dimension of the state space.
+
+    Two localization problems
+        "Global" localization
+            figure out where the robot is, but we don't know where the robot started
+            sometimes called the "kidnapped robot problem"
+
+        Position tracking
+            figured out where the robot is, given that we know where the robot stated.
+
+    Sampling to approximate densities
+        densities can become arbitrarily complex, even when noise models are gaussian.
+        one issue is nonlinear measurement and noise models
+        a second issue is the curse of dimensionality (for grid-based methods)
+
+        one way out: Sampling
+    
+    Represent p(x) by set of N weighted, random samples, called particles, of the form: < (xi, yi), wi >
+        (xi, yi) represents robot's pose
+        wi represents a weight, where the sum of wi = 1
+    A.K.A. Monte Carlo Localization (MCL)
+        Refers to techniques that are stochastic (random/non-deterministic)
+        Used in many modeling and simulation approaches
+
+    
